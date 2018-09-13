@@ -2,7 +2,7 @@
 
 #第一步准备txt文档
 #第二步
-filename = "yesminister,txt"
+filename = "yesminister.txt"
 with open(filename) as f:
     mytext = f.read()
  
