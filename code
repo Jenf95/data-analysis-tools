@@ -1,0 +1,17 @@
+#how to make a word cloud
+
+#第一步准备txt文档
+#第二步
+filename = "yesminister,txt"
+with open(filename) as f:
+    mytext = f.read()
+ 
+from wordcloud import WordCloud
+wordcloud = WordCloud().generate(mytext)
+
+%pylab inline
+import matplotlib.pyplot as plt
+plt.imshow(wordcloud, interpolation = "bilinear")
+plt.axis("off")
+
+#end of how to make word cloud
